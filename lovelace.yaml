@@ -1,0 +1,383 @@
+type: vertical-stack
+cards:
+  - type: horizontal-stack
+    cards:
+      - type: 'custom:button-card'
+        color_type: card
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            entity_id: skyremote.broadlink
+            device: sky
+            command: mute
+        icon: 'mdi:volume-off'
+        color: 'rgb(75, 75, 77)'
+      - type: 'custom:button-card'
+        color_type: card
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            entity_id: skyremote.broadlink
+            device: sky
+            command: power
+        icon: 'mdi:power'
+        color: 'rgb(150, 150, 150)'
+      - type: 'custom:button-card'
+        color_type: card
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            entity_id: skyremote.broadlink
+            device: sky
+            command: previous_channel
+        icon: 'mdi:swap-horizontal-bold'
+        color: 'rgb(75, 75, 77)'
+  - type: horizontal-stack
+    cards:
+      - type: 'custom:button-card'
+        color_type: card
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            entity_id: skyremote.broadlink
+            device: sky
+            command: info
+        icon: 'mdi:television-guide'
+        color: 'rgb(75, 75, 77)'
+      - type: 'custom:button-card'
+        color_type: card
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            entity_id: skyremote.broadlink
+            device: sky
+            command: up
+        icon: 'mdi:arrow-up-thick'
+        color: 'rgb(10, 170, 238)'
+      - type: 'custom:button-card'
+        color_type: card
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            entity_id: skyremote.broadlink
+            device: sky
+            command: esc
+        icon: 'mdi:backburger'
+        color: 'rgb(75, 75, 77)'
+  - type: horizontal-stack
+    cards:
+      - type: 'custom:button-card'
+        color_type: card
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            entity_id: skyremote.broadlink
+            device: sky
+            command: left
+        icon: 'mdi:arrow-left-thick'
+        color: 'rgb(10, 170, 238)'
+      - type: 'custom:button-card'
+        color_type: card
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            entity_id: skyremote.broadlink
+            device: sky
+            command: ok
+        icon: 'mdi:thumb-up-outline'
+        color: 'rgb(10, 170, 238)'
+      - type: 'custom:button-card'
+        color_type: card
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            entity_id: skyremote.broadlink
+            device: sky
+            command: right
+        icon: 'mdi:arrow-right-thick'
+        color: 'rgb(10, 170, 238)'
+  - type: horizontal-stack
+    cards:
+      - type: 'custom:button-card'
+        color_type: card
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            entity_id: skyremote.broadlink
+            device: sky
+            command: volume_down
+        hold_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            entity_id: skyremote.broadlink
+            device: sky
+            command: volume_down
+            num_repeats: 5
+            delay_secs: 0.05
+        icon: 'mdi:volume-minus'
+        color: 'rgb(75, 75, 77)'
+      - type: 'custom:button-card'
+        color_type: card
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            entity_id: skyremote.broadlink
+            device: sky
+            command: down
+        icon: 'mdi:arrow-down-thick'
+        color: 'rgb(10, 170, 238)'
+      - type: 'custom:button-card'
+        color_type: card
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            entity_id: skyremote.broadlink
+            device: sky
+            command: volume_up
+        hold_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            entity_id: skyremote.broadlink
+            device: sky
+            command: volume_up
+            num_repeats: 5
+            delay_secs: 0.05
+        icon: 'mdi:volume-plus'
+        color: 'rgb(75, 75, 77)'
+  - type: horizontal-stack
+    cards:
+      - type: 'custom:button-card'
+        color_type: card
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            entity_id: skyremote.broadlink
+            device: sky
+            command: 1
+        icon: 'mdi:numeric-1-box-outline'
+        color: 'rgb(150, 150, 150)'
+      - type: 'custom:button-card'
+        color_type: card
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            entity_id: skyremote.broadlink
+            device: sky
+            command: 2
+        icon: 'mdi:numeric-2-box-outline'
+        color: 'rgb(150, 150, 150)'
+      - type: 'custom:button-card'
+        color_type: card
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            entity_id: skyremote.broadlink
+            device: sky
+            command: 3
+        icon: 'mdi:numeric-3-box-outline'
+        color: 'rgb(150, 150, 150)'
+  - type: horizontal-stack
+    cards:
+      - type: 'custom:button-card'
+        color_type: card
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            entity_id: skyremote.broadlink
+            device: sky
+            command: 4
+        icon: 'mdi:numeric-4-box-outline'
+        color: 'rgb(150, 150, 150)'
+      - type: 'custom:button-card'
+        color_type: card
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            entity_id: skyremote.broadlink
+            device: sky
+            command: 5
+        icon: 'mdi:numeric-5-box-outline'
+        color: 'rgb(150, 150, 150)'
+      - type: 'custom:button-card'
+        color_type: card
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            entity_id: skyremote.broadlink
+            device: sky
+            command: 6
+        icon: 'mdi:numeric-6-box-outline'
+        color: 'rgb(150, 150, 150)'
+  - type: horizontal-stack
+    cards:
+      - type: 'custom:button-card'
+        color_type: card
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            entity_id: skyremote.broadlink
+            device: sky
+            command: 7
+        icon: 'mdi:numeric-7-box-outline'
+        color: 'rgb(150, 150, 150)'
+      - type: 'custom:button-card'
+        color_type: card
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            entity_id: skyremote.broadlink
+            device: sky
+            command: 8
+        icon: 'mdi:numeric-8-box-outline'
+        color: 'rgb(150, 150, 150)'
+      - type: 'custom:button-card'
+        color_type: card
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            entity_id: skyremote.broadlink
+            device: sky
+            command: 9
+        icon: 'mdi:numeric-9-box-outline'
+        color: 'rgb(150, 150, 150)'
+  - type: horizontal-stack
+    cards:
+      - type: 'custom:button-card'
+        color_type: blank-card
+      - type: 'custom:button-card'
+        color_type: card
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            entity_id: skyremote.broadlink
+            device: sky
+            command: 0
+        icon: 'mdi:numeric-0-box-outline'
+        color: 'rgb(150, 150, 150)'
+      - type: 'custom:button-card'
+        color_type: blank-card
+  - type: horizontal-stack
+    cards:
+      - type: 'custom:button-card'
+        color_type: card
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            entity_id: skyremote.broadlink
+            device: sky
+            command: red
+        color: 'rgb(255, 0, 0)'
+        name: ' '
+      - type: 'custom:button-card'
+        color_type: card
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            entity_id: skyremote.broadlink
+            device: sky
+            command: gree
+        color: 'rgb(0, 255, 0)'
+        name: ' '
+      - type: 'custom:button-card'
+        color_type: card
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            entity_id: skyremote.broadlink
+            device: sky
+            command: yellow
+        color: 'rgb(255, 255, 0)'
+      - type: 'custom:button-card'
+        color_type: card
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            entity_id: skyremote.broadlink
+            device: sky
+            command: blu
+        color: 'rgb(0, 0, 255)'
+  - type: horizontal-stack
+    cards:
+      - type: 'custom:button-card'
+        color_type: card
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            entity_id: skyremote.broadlink
+            device: sky
+            command: play
+        icon: 'mdi:play'
+        color: 'rgb(75, 75, 77)'
+      - type: 'custom:button-card'
+        color_type: card
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            entity_id: skyremote.broadlink
+            device: sky
+            command: pause
+        icon: 'mdi:pause'
+        color: 'rgb(75, 75, 77)'
+      - type: 'custom:button-card'
+        color_type: card
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            entity_id: skyremote.broadlink
+            device: sky
+            command: stop
+        icon: 'mdi:stop'
+        color: 'rgb(75, 75, 77)'
+      - type: 'custom:button-card'
+        color_type: card
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            entity_id: skyremote.broadlink
+            device: sky
+            command: rewind
+        icon: 'mdi:rewind'
+        color: 'rgb(75, 75, 77)'
+      - type: 'custom:button-card'
+        color_type: card
+        tap_action:
+          action: call-service
+          service: remote.send_command
+          service_data:
+            entity_id: skyremote.broadlink
+            device: sky
+            command: forward
+        icon: 'mdi:fast-forward'
+        color: 'rgb(75, 75, 77)'
